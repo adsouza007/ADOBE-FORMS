@@ -1,0 +1,1798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20240701.1.52_SAP" APIVersion="3.6.24183.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2025-05-12T07:15:45Z" uuid="4980699f-2bb5-4683-aa32-98573b7c9340">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_IN" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Master_Body">
+            <contentArea h="235.332mm" id="contentArea_ID" w="190.5mm" x="12.7mm" y="55.748mm"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <draw anchorType="middleCenter" h="41.546mm" hAlign="center" name="Text12" w="109.952mm" x="109.15mm" y="168.436mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField009741" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font baselineShift="0pt" size="48pt" typeface="Arial" weight="bold">
+                  <fill>
+                     <color value="193,193,193"/>
+                  </fill>
+               </font>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               <border>
+                  <edge presence="hidden">
+                     <color value="192,192,192"/>
+                  </edge>
+                  <corner join="round" presence="hidden" radius="2mm" thickness="0.175mm">
+                     <color value="192,192,192"/>
+                  </corner>
+               </border>
+            </draw>
+            <subform name="LogoBlock" w="190.958mm" x="12.383mm" y="6.459mm">
+               <draw anchorType="middleCenter" h="18.505mm" hAlign="center" name="Text12" w="139.7mm" x="95.976mm" y="27.3mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><br/><span xfa:embed="#floatingField026962" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" size="20pt" typeface="Arial" weight="bold">
+                     <fill>
+                        <color value="193,193,193"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden">
+                        <color value="192,192,192"/>
+                     </edge>
+                     <corner join="round" presence="hidden" radius="2mm" thickness="0.175mm">
+                        <color value="192,192,192"/>
+                     </corner>
+                  </border>
+               </draw>
+               <bind match="none"/>
+               <draw anchorType="middleCenter" h="13.337mm" name="Text9" w="55.061mm" x="89.451mm" y="19.114mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="4BE6931F-256A-4C29-B18F-6315B81E5450">Purchase Order</text>
+                  </value>
+                  <font baselineShift="0pt" size="20pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <?renderCache.bounds 153244 34972 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 14 Purchase Order 0 16511 24694 0 0 0 "Arial Narrow" 1 0 20000 ISO-8859-1?></draw>
+               <field h="25.4mm" name="UPGRAD_LOGO" w="38.1mm" x="2.951mm" y="4.201mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <caption placement="bottom" reserve="5mm">
+                     <font typeface="Arial"/>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.GRAPHIC"/>
+                  <desc>
+                     <exData name="Schema Annotation">Graphic Node GRAPHIC
+URL-FIELD = GV_LOGO</exData>
+                  </desc>
+               </field>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <field access="readOnly" h="9mm" id="floatingField006334" name="TextField" presence="hidden" w="62mm" x="0.117mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.ORDER_NO"/>
+               </field>
+               <draw h="6.35mm" name="Text13" w="47.739mm" y="36.721mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="41EF57E0-CBB7-4805-86A6-47284E914654">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">PO Number :<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField019169" name="TextField" presence="hidden" w="62mm" x="0.117mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.ORDER_DATE"/>
+               </field>
+               <draw h="6.35mm" name="Text13" w="47.739mm" x="48.069mm" y="36.721mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="C5604BC0-3EC5-4519-836E-EC7335E2A6CD">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">PO Date :<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField011478" name="COMP_NM" presence="hidden" w="62mm" x="0.117mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial Narrow"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.COMP_NM"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField024464" name="COMP_ADDR" presence="hidden" w="62mm" x="0.117mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.COMP_ADDR"/>
+               </field>
+               <draw h="30.344mm" name="Text14" w="57.744mm" x="132.584mm" y="4.201mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="66E7B156-9AC9-4495-BA60-4EDF01586587">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField011478" xfa:embedMode="raw" xfa:embedType="uri"/><br/><span style="font-weight:normal"><span xfa:embed="#floatingField024464" xfa:embedMode="raw" xfa:embedType="uri"/></span></p><p style="font-weight:normal;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+                     </exData>
+                  </value>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               </draw>
+               <?templateDesigner expand 0?>
+               <field access="readOnly" h="9mm" id="floatingField000153" name="TextField" presence="hidden" w="62mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.CURRENCY"/>
+               </field>
+               <draw h="6.35mm" name="Text13" w="47.739mm" x="95.567mm" y="36.721mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="5446A42B-999E-4F44-8458-0A0D55D426A8">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Currency :<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField000153" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField026962" name="APPRL_PEND" presence="hidden" w="62mm" x="93.147mm" y="177.415mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.APPR_WATER"/>
+               </field>
+               <draw h="6.35mm" name="Text13" w="190.958mm" y="43.071mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="8D6D549A-D60B-4090-9D68-49EF837A0981">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Contact Person :<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField003902" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField003902" name="TextField" presence="hidden" w="62mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GS_PO_FORM.PO_REQ"/>
+               </field>
+               <draw h="6.35mm" hAlign="right" name="Pages" w="47.739mm" x="143.027mm" y="36.721mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" maxLength="0" xliff:rid="502836E5-AAF7-4F0F-B3E9-87610C8B7829">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+               </draw>
+               <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="62.914mm" y="196.988mm">
+                  <ui>
+                     <numericEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="20mm">
+                     <font typeface="Arial Narrow"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="80B592BF-8A45-4762-94A8-16A6E1F0E6B3">Text Field</text>
+                     </value>
+                  </caption>
+                  <calculate override="error"/>
+                  <event activity="ready" name="event__layout_ready" ref="$layout">
+                     <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+                  </event>
+                  <?templateDesigner floatingFieldPlaceholder #?>
+                  <bind match="none"/>
+               </field>
+               <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="62.914mm" y="196.988mm">
+                  <ui>
+                     <numericEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="20mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="4CE4AAB2-CAA6-4E7F-94EF-37D981F495E4">Text Field</text>
+                     </value>
+                  </caption>
+                  <calculate override="error"/>
+                  <event activity="ready" name="event__layout_ready" ref="$layout">
+                     <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+                  </event>
+                  <?templateDesigner floatingFieldPlaceholder ##?>
+                  <bind match="none"/>
+               </field>
+            </subform>
+            <field access="readOnly" h="9mm" id="floatingField009741" name="CLIENT" presence="hidden" w="62mm" x="0mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.GS_PO_FORM.CLIENT_WATER"/>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <proto/>
+      <desc>
+         <text name="version">11.0.9.20240701.1.52.2</text>
+      </desc>
+      <subform hAlign="center" layout="tb" name="Main_Page" w="190.5mm">
+         <keep previous="contentArea"/>
+         <breakAfter target="Master_Body.#contentArea" targetType="contentArea"/>
+         <margin leftInset="0mm"/>
+         <subform columnWidths="63.5mm 2.54mm 60.96mm 2.54mm 60.96mm" layout="table" name="Table1">
+            <border>
+               <edge presence="hidden"/>
+               <corner presence="hidden"/>
+               <edge/>
+               <edge presence="hidden"/>
+               <edge/>
+               <corner/>
+               <corner presence="hidden"/>
+               <corner/>
+            </border>
+            <subform layout="row" name="Row1">
+               <assist role="TR"/>
+               <draw h="6.35mm" name="Cell1">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="052848DC-2FD8-4C51-9A2A-FA301D136F0C">Supplier Details: </text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <draw h="0.244972in" name="Cell2">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <draw h="6.35mm" name="Cell3">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="FF2E42BC-55C6-423E-99C4-61F6A4A3951A">Bill To Details: ("Company")</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <draw h="0.244972in" name="Cell4">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <draw h="6.35mm" name="Cell5">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="7C34D45C-DBF4-4790-8C6A-7575DAE399F5">Ship To Details: ("Company")</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="row" name="Row2">
+               <assist role="TR"/>
+               <field minH="2.002mm" y="0mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.VEN_NM"/>
+               </field>
+               <draw h="0.258847in" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </draw>
+               <field minH="2.002mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_NM"/>
+               </field>
+               <draw h="0.258847in" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </draw>
+               <field h="0.258847in" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_NM"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="row" name="Row2">
+               <assist role="TR"/>
+               <field minH="9.708mm" name="Cell1">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font typeface="Arial Narrow"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="0mm"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.VEN_ADDR"/>
+               </field>
+               <draw h="0.382222in" name="Cell2">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field minH="9.708mm" name="Cell3">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font baselineShift="0pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="0mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_ADDR"/>
+               </field>
+               <draw h="0.382222in" name="Cell4">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field minH="9.708mm" name="Cell5">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font baselineShift="0pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="0mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_ADDR"/>
+               </field>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="row" name="Row3">
+               <assist role="TR"/>
+               <field access="readOnly" h="9mm" id="floatingField005705" name="TextField" presence="hidden" w="62mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SUPL_GST"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField005436" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GV_TAXTYPE"/>
+               </field>
+               <draw h="6.35mm" name="Cell1">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="555C30F6-0B24-450E-8311-B9B105EE4096">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField005436" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField005705" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <draw h="0.258847in" name="Cell2">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField023281" name="TextField" presence="hidden" w="62mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_GST"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField032391" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GV_TAXTYPE"/>
+               </field>
+               <draw h="6.35mm" name="Cell3">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="0153E1C2-ABF2-447A-B9B2-F97F3863692A">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField032391" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField023281" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <draw h="0.258847in" name="Cell4">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField014604" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GV_TAXTYPE"/>
+               </field>
+               <draw h="6.35mm" name="Cell5">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="2B71C3AB-4E11-4E8B-9C73-C4DFC4804947">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField014604" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField023281" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="row" name="Row4">
+               <assist role="TR"/>
+               <field access="readOnly" h="9mm" id="floatingField028145" name="Aufnr" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.AUFNR"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField000292" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SUPL_PAN"/>
+               </field>
+               <draw h="6.35mm" name="Cell1">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="FCC52514-9206-422D-87FD-D2B9FB6B8642">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">PAN No:<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField000292" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para vAlign="middle"/>
+               </draw>
+               <draw h="0.293903in" name="Cell2">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField016827" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_PAN"/>
+               </field>
+               <draw h="6.35mm" name="Cell3">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="6A104EF8-C87B-4542-BEDE-884DD9263DE1">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">PAN No:<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField016827" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <draw h="0.293903in" name="Cell4">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="9pt" typeface="Arial Narrow"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField009961" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.GS_PO_FORM.SHIP_PAN"/>
+               </field>
+               <draw h="6.35mm" name="Cell5">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="E842B342-4716-40C1-BB57-8A6434DFED13">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">PAN No:<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField009961" xfa:embedMode="raw" xfa:embedType="uri"/></span></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                  <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <keep intact="contentArea"/>
+            <bind match="none"/>
+            <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+            <?templateDesigner expand 1?></subform>
+         <field access="readOnly" h="9mm" id="floatingField029358" name="REMARKS" presence="hidden" w="62mm" x="0mm" y="0mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$record.GS_PO_FORM.REMARKS"/>
+         </field>
+         <draw h="1.27mm" name="Rectangle1" w="190.5mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <subform layout="tb" name="INV_TAX_INFO" w="190.5mm">
+            <bind match="none"/>
+            <subform layout="tb" minH="25.4mm" name="ITEM" w="190.403mm">
+               <bind match="none"/>
+               <subform columnWidths="15.24mm 92.456mm 25.908mm 20.32mm 10.0628mm 26.416mm" layout="table" name="GT_TAX">
+                  <subform id="overflowLeader_ID" layout="row" name="overflowLeader">
+                     <draw h="6.35mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="73134959-69D8-4ACD-A28D-12EB6BE34915">Sr.No.</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="221,221,221"/>
+                           </fill>
+                        </border>
+                        <keep intact="none"/>
+                     </draw>
+                     <draw h="6.35mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="51757FDF-307C-489E-A881-050584484194">Description </text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <keep intact="none"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="221,221,221"/>
+                           </fill>
+                        </border>
+                     </draw>
+                     <draw h="6.35mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="C8B06593-CAF9-484F-88C8-E498B667A46C">Rate</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="221,221,221"/>
+                           </fill>
+                        </border>
+                        <keep intact="none"/>
+                     </draw>
+                     <draw h="6.35mm" w="0.4in" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="1AA7889F-1B48-4F76-8AFC-25CF8CFFA8E3">Qty</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="221,221,221"/>
+                           </fill>
+                        </border>
+                        <keep intact="none"/>
+                     </draw>
+                     <draw h="6.35mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="D68C7872-4F46-48D2-95BF-D7A9F9AB8136">UoM</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="221,221,221"/>
+                           </fill>
+                        </border>
+                        <keep intact="none"/>
+                     </draw>
+                     <draw h="6.35mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="A61DB945-FE6F-4EC3-BFF8-0C6401B10C09">Amount</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge/>
+                           <corner/>
+                           <fill>
+                              <color value="221,221,221"/>
+                           </fill>
+                        </border>
+                        <keep intact="none"/>
+                     </draw>
+                     <assist role="TH"/>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <breakAfter target="Master_Body" targetType="pageArea"/>
+                     <keep intact="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="row" name="DATA">
+                     <field minH="6.35mm" name="SR_NO" w="62mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial Narrow"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <bind match="dataRef" ref="$.SR_NO"/>
+                        <desc>
+                           <text name="Schema Annotation">3-Byte field</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                     </field>
+                     <field minH="6.35mm" w="62mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial Narrow"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.DESC"/>
+                        <para spaceBelow="6pt" vAlign="bottom"/>
+                     </field>
+                     <field minH="6.35mm" name="SAC_HSN" w="62mm" x="124mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial Narrow"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <text maxChars="20"/>
+                        </value>
+                        <bind match="dataRef" ref="$.RATE"/>
+                        <desc>
+                           <text name="Schema Annotation">Control code for consumption taxes in foreign trade</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                     </field>
+                     <field minH="6.35mm" name="QTY" w="62mm" y="9mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial Narrow"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <text maxChars="10"/>
+                        </value>
+                        <bind match="dataRef" ref="$.QTY"/>
+                        <desc>
+                           <text name="Schema Annotation">Character Field with Length 10</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                     </field>
+                     <field minH="6.35mm" name="UNIT_PR" w="62mm" x="62mm" y="9mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial Narrow"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <text maxChars="20"/>
+                        </value>
+                        <bind match="dataRef" ref="$.UOM"/>
+                        <desc>
+                           <text name="Schema Annotation">Char 20</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                     </field>
+                     <field minH="6.35mm" name="TOT_AMT" w="62mm" x="62mm" y="27mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial Narrow"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text maxChars="20"/>
+                        </value>
+                        <bind match="dataRef" ref="$.AMT"/>
+                        <desc>
+                           <text name="Schema Annotation">Char 20</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                     </field>
+                     <assist role="TR"/>
+                     <occur max="-1"/>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <breakAfter target="Master_Body" targetType="pageArea"/>
+                     <breakBefore/>
+                     <keep intact="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <bind match="dataRef" ref="$record.GT_ITEM"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <subform layout="row" name="DATA">
+                     <assist role="TF"/>
+                     <field access="readOnly" h="9mm" id="floatingField000491" name="CURR" presence="hidden" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.GS_PO_FORM.CURRENCY"/>
+                     </field>
+                     <draw colSpan="5" h="6.35mm" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <border>
+                           <edge/>
+                           <edge/>
+                           <edge thickness="0.3556mm"/>
+                           <edge/>
+                           <corner/>
+                           <corner/>
+                           <corner thickness="0.356mm"/>
+                           <corner/>
+                        </border>
+                        <value>
+                           <exData contentType="text/html" xliff:rid="2B174D0C-AB35-4B36-88FC-58BE4A0ACFA0">
+                              <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Total Amount Excluding Taxes<span style="letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal;letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="letter-spacing:0em"><span xfa:embed="#floatingField000491" xfa:embedMode="raw" xfa:embedType="uri"/></span><span style="letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal;letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal;letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal;letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal;letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal;letter-spacing:0em"><span style="xfa-spacerun:yes"> </span></span></p></body>
+                           </exData>
+                        </value>
+                        <keep intact="none"/>
+                     </draw>
+                     <field access="readOnly" h="9mm" id="floatingField015724" name="SUB_TOT" presence="hidden" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.GS_PO_FORM.TOT_AMT"/>
+                     </field>
+                     <draw h="6.35mm" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <border>
+                           <edge/>
+                           <edge/>
+                           <edge thickness="0.3556mm"/>
+                           <edge thickness="0.1753mm"/>
+                           <corner/>
+                           <corner/>
+                           <corner thickness="0.356mm"/>
+                           <corner thickness="0.175mm"/>
+                        </border>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                           </exData>
+                        </value>
+                        <keep intact="none"/>
+                     </draw>
+                     <keep intact="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="row" name="DATA">
+                     <assist role="TF"/>
+                     <field access="readOnly" h="9mm" id="floatingField026500" name="TextField" presence="hidden" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.GS_PO_FORM.AMT_WORDS"/>
+                     </field>
+                     <draw colSpan="-1" h="6.35mm" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <border>
+                           <edge/>
+                           <corner/>
+                        </border>
+                        <value>
+                           <exData contentType="text/html" xliff:rid="5872ED2D-33BE-414C-A8F7-F3543B67DAB3">
+                              <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Amount In words:<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/> only.</p></body>
+                           </exData>
+                        </value>
+                        <keep intact="none"/>
+                     </draw>
+                     <keep intact="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <overflow leader="overflowLeader"/>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <breakAfter/>
+            <?templateDesigner expand 1?></subform>
+         <border>
+            <edge/>
+            <corner thickness="0.175mm"/>
+         </border>
+         <field name="TextField1" w="190.5mm">
+            <ui>
+               <textEdit multiLine="1"/>
+            </ui>
+            <font baselineShift="0pt" typeface="Arial Narrow"/>
+            <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+            <para marginLeft="0pt" marginRight="0pt" spaceAbove="6pt" spaceBelow="6pt" textIndent="0pt" vAlign="middle"/>
+            <border>
+               <edge/>
+               <corner thickness="0.175mm"/>
+               <edge presence="hidden"/>
+               <edge/>
+               <edge presence="hidden"/>
+               <corner presence="hidden" thickness="0.175mm"/>
+               <corner thickness="0.175mm"/>
+               <corner presence="hidden" thickness="0.175mm"/>
+            </border>
+            <caption>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p><span xfa:embed="#floatingField029358" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <para spaceAbove="6pt" spaceBelow="6pt"/>
+            </caption>
+            <bind match="dataRef" ref="$record.GS_PO_FORM.REMARKS"/>
+         </field>
+         <subform layout="tb" name="FOOTER_PAGE" w="190.5mm">
+            <bind match="none"/>
+            <draw minH="6.35mm" name="Text13" w="190.5mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+               <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <value>
+                  <text xliff:rid="E31175B7-192B-4AB5-A253-E7A778382432">General Information:</text>
+               </value>
+               <keep next="contentArea"/>
+            </draw>
+            <field access="readOnly" h="9mm" id="floatingField002995" name="pay_terms" presence="hidden" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$record.GS_PO_FORM.PAY_TERMS"/>
+            </field>
+            <field access="readOnly" h="9mm" id="floatingField004827" name="PRO_CODENM" presence="hidden" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$record.GS_PO_FORM.PRO_CODENM"/>
+            </field>
+            <field access="readOnly" h="9mm" id="floatingField011942" name="ASSignment" presence="hidden" w="62mm" x="0mm" y="0mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$record.GS_PO_FORM.ASSIGNMENT"/>
+            </field>
+            <draw h="22.463mm" name="Text13" w="190.5mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+               <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <value>
+                  <exData contentType="text/html" xliff:rid="870E91CB-609F-4B79-9CB3-3AECCB611BAA">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Payment Terms<span style="xfa-spacerun:yes">  </span>:<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField002995" xfa:embedMode="raw" xfa:embedType="uri"/></span><span style="font-weight:normal"><span style="xfa-spacerun:yes"> </span></span><span style="font-weight:normal">from the receipt of valid and undisputed invoice, unless agreed otherwise under a definitive agreement or work order.</span><br/>Program Code :<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField004827" xfa:embedMode="raw" xfa:embedType="uri"/></span></p><p style="letter-spacing:0in">Account Assignment :<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal"><span xfa:embed="#floatingField011942" xfa:embedMode="raw" xfa:embedType="uri"/></span></p><p style="letter-spacing:0in">Internal Order No :<span style="xfa-spacerun:yes">  </span><span style="font-weight:normal"><span xfa:embed="#floatingField028145" xfa:embedMode="raw" xfa:embedType="uri"/></span><span style="xfa-spacerun:yes"> </span></p></body>
+                  </exData>
+               </value>
+            </draw>
+            <draw h="11.544mm" name="Text13" w="190.5mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial Narrow" weight="bold"/>
+               <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <value>
+                  <exData contentType="text/html" xliff:rid="DE829ADE-B3F1-4D41-BD99-27DE2E9987AE">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Note:<span style="xfa-spacerun:yes"> </span><span style="font-weight:normal">Kindly ensure that your invoices include the Purchase Order number and Company's GST number. Failure to provide these details may result in non-acceptance of materials/services, delayed or no payments.</span></p></body>
+                  </exData>
+               </value>
+            </draw>
+            <draw h="7.62mm" name="Text13" w="190.5mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="ArialNarrow"/>
+               <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <value>
+                  <exData contentType="text/html" xliff:rid="944E4A83-D19B-474B-84E6-CC11162727AE">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Arial Narrow';text-decoration:none;letter-spacing:0in">*This is a computer generated purchase order, hence no signature is required.</p></body>
+                  </exData>
+               </value>
+            </draw>
+            <breakAfter/>
+            <keep previous="contentArea"/>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 0?></subform>
+      <?templateDesigner HyphenationExtra allowHow:2?>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <subform h="235.331mm" name="TC_PAGE" w="190.425mm">
+         <bind match="none"/>
+         <draw h="221.076mm" name="Text15" w="7.484444in" y="11.226mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="DDB6B7DA-3DA1-4CA2-B492-8EE4C50AF8AA">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="margin-right:0pt;margin-left:5.35pt;line-height:11pt;letter-spacing:0in">1. Company is pleased to issue this Purchase Order (“PO”). By issuance of this PO, the Supplier agrees to be bound by these Terms and Conditions, in addition to any definitive agreement or work order (if applicable).<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.25pt;margin-left:5.3pt;line-height:11pt;letter-spacing:0in">Kindly ensure all the deliveries/ Services are as specified in the definitive agreement/ work order / PO and are as per the absolute satisfaction of the Company. This PO is governed by the terms and conditions outlined in the definitive agreement/ work order executed between the parties. In the absence of a signed definitive agreement/ work order, the terms specified in the PO shall apply. In case PO and definitive agreement/ work order exist, the terms of the definitive agreement/ work order shall apply.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:2.25pt;margin-left:5.3pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">2. This PO has been digitally approved, therefore physical signatures are not required.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:2.25pt;margin-left:5.3pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.25pt;margin-left:5.3pt;line-height:11pt;letter-spacing:0in">3. The prices mentioned in this PO will be fixed and no increase in price shall be permitted during the issuance and, or execution of the PO unless a written amendment is signed by the Company. PO value is tentative and indicative, and the invoice should be raised based on the actual Services provided by the Supplier and accepted by the Company to its satisfaction.<span style="xfa-spacerun:yes">  </span>Company does not guarantee any specific level of volume commitment or expenditure or any minimum number of projects or Services under this PO.</p><p style="margin-right:0pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">4. The price stated above are subject to all prevailing and applicable govt. taxes, duties, levies and octroi etc, as may be applicable in the official currency of the country where the Company in this PO is located, unless specified otherwise in the definitive agreement/ work order.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:5.5pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.5pt;line-height:11pt;letter-spacing:0in">5. The Company reserves the right to immediately cancel the PO in full or part thereof without assigning any reason whatsoever.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">6. No terms and conditions specified by the Supplier in their SALE Note or otherwise in any other document shall be binding on the Company unless specifically agreed by the Company in writing.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:5.5pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.5pt;line-height:11pt;letter-spacing:0in">7. The Amount mentioned in this PO includes cost of packing delivery charges and all other incidental expenses, unless otherwise stated in writing by the Company.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:2.15pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.15pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">8. Time schedule specified for the delivery of the goods/Service is the essence of the contract. If delivery / ies is /are delayed beyond stipulated period, the Company reserves the right to immediately cancel this PO (in part or full), levy penalties, and, or,<span style="xfa-spacerun:yes">  </span>procure the material/Services from other sources.<span style="xfa-spacerun:yes">  </span>Any such cost incurred by the Company for such procurement will be solely borne by the Supplier<span style="xfa-spacerun:yes">  </span>and be recovered from the Supplier accordingly, in addition to all the rights that the Company may have under law and equity.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">9. The Supplier shall perform the Services professionally, to the best of their capability, and at all times in accordance with applicable laws and industry standards.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">10. The Supplier hereby acknowledges and agrees that the Company has commissioned the Supplier to perform the Services in accordance with this PO and that all worldwide perpetual rights, title and interest in any findings, reports, inventions, writings, written, invented, made or conceived by the Supplier in the course of providing Services ("Deliverables") shall be assigned and remain the sole and exclusive property of the Company, without further consideration, The Supplier shall obtain all requisite approval for performance of Services under this PO.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">11. The Supplier shall not have the right to use the Company's name, trademark, logo, or slogans without the prior written consent of the Company. Any use of Company's intellectual property, even with Company's written consent must be strictly in accordance with Company's branding guidelines.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in">12. The Supplier shall, at its sole cost and without delay, rectify any deficiencies or defects in the Services and/or Deliverables provided to Company. Company shall have no obligation to make any payments to the Supplier unless and until the Services and/or Deliverables are completed to the Company's absolute and sole satisfaction.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:1.85pt;margin-left:5.4pt;line-height:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.2pt;margin-left:5.35pt;line-height:11pt;text-decoration:none;letter-spacing:0in">13.Company assumes no liability for infringement of any patent, trademark, design, copyright etc. for using Supplier's material as well as for any product liability claim, arising thereof. The Supplier shall be solely responsible for any such liability. For any liability arising out of the same, Company reserves the right to withhold the payment of the bills/invoices, and the bills will not be processed for payment.</p><p style="margin-right:2.2pt;margin-left:5.35pt;line-height:11pt;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.15pt;margin-left:5.4pt;text-indent:0.05pt;text-decoration:none;letter-spacing:0in">14. The Supplier shall keep confidential any information that can be reasonably construed as being confidential, immaterial of the manner in which it is made available to the Supplier. The Supplier shall at all times take such steps as may be necessary to safeguard all personally identifiable information or sensitive information shared with it by the Company, which shall, in no event, be lesser than industry best practices.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.15pt;margin-left:5.4pt;text-indent:0.05pt;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.15pt;margin-left:5.4pt;text-indent:0.05pt;text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font baselineShift="0pt" size="9pt" typeface="Arial Narrow"/>
+            <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="6.35mm" topInset="1.0008mm"/>
+            <para hAlign="justify" lineHeight="12pt" marginLeft="1.2pt" marginRight="1.55pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0.1pt"/>
+            <border>
+               <edge presence="hidden"/>
+               <corner presence="hidden" thickness="0.175mm"/>
+            </border>
+         </draw>
+         <draw anchorType="middleCenter" h="11.374mm" name="Text9" w="75.019mm" x="96.525mm" y="5.687mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text xliff:rid="4EE360AF-853C-467A-83E7-10A719DFB55E">GENERAL TERMS &amp; CONDITIONS</text>
+            </value>
+            <font baselineShift="0pt" size="12pt" typeface="Arial Narrow" weight="bold"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+            <?renderCache.bounds 209818 29407 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 26 GENERAL TERMS & CONDITIONS 0 26518 19595 0 0 0 "Arial Narrow" 1 0 12000 ISO-8859-1?></draw>
+         <breakBefore startNew="1" targetType="pageArea"/>
+         <border>
+            <edge/>
+            <corner thickness="0.175mm"/>
+         </border>
+         <?templateDesigner expand 0?></subform>
+      <subform h="235.332mm" w="190.5mm">
+         <bind match="none"/>
+         <draw h="227.116mm" name="Text16" w="7.468347in" y="0.001mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <font baselineShift="0pt" size="9pt" typeface="Arial Narrow"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <value>
+               <exData contentType="text/html" xliff:rid="E204E925-6B59-4762-87CC-1D034CF517C5">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="margin-right:2.2pt;margin-left:5.3pt;text-indent:0.25pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.2pt;margin-left:5.3pt;text-indent:0.25pt">15. In case any product/Deliverable related liability/ claim/ dispute is received by the Company from any third party, Supplier shall deal with such claim and make good any loss incurred or suffered by the Company. The Supplier shall at all times indemnify &amp; keep indemnified the Company &amp; it's employees, agents and representatives from all claims(s), dispute(s), liability/ ies, loss/ es etc. caused to it due to any reason. Company's total aggregate liability under or in connection with the PO/definitive agreement/work order (whether in contract, tort (including negligence) or otherwise) shall not exceed in aggregate the total fees paid by Company during the preceding one (1) month to which the claim relates or half times the total amount due from Company for the supply of goods whichever is lower.</p><p style="margin-right:2.2pt;margin-left:5.3pt;text-indent:0.25pt"><span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:5.3pt">16. The Services to be provided by the Supplier under the definitive agreement/<span style="xfa-spacerun:yes">  </span>work order / PO may be terminated at any time by the Company by giving 48 (forty-eight) hours, suspend and/or alter/reduce/reschedule the scope of work(s)/Services, in whole or in part, or may change the locations or facilities for the Services, with prior written notice, with or without assigning a reason.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.25pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:5.25pt">17. Please acknowledge receipt of this PO in writing within seven days of receiving. Non-receipt of the said acknowledgement within seven days will be presumed as Supplier's unconditional acceptance of this PO.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:5.25pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.35pt">18. Payments shall be made as per our agreed terms and conditions as defined in the definitive agreement/ work order or within such a period as mentioned above in this PO, from the date of receipt of valid and undisputed invoice<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:3.35pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.4pt">19. The PO reference number and item code should be mentioned in all future correspondence, Delivery Challans and invoice/s.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.45pt;margin-left:3.4pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:2.45pt;margin-left:3.4pt">20. All invoices and, or, bills shall be submitted to the Company on an immediate basis upon delivery of Services by Supplier and its acceptance thereof by the Company. All invoices submitted to Company should include adequate documentation, including, as applicable: (i) a statement that the Deliverables comply with the provisions of this PO/agreement ; (ii) an explanation of the Deliverables provided during the period covered by the invoice, including applicable purchase order number, invoice number, invoice date, description of the Deliverables and the corresponding price; and (iii) if expense reimbursement is provided for in this PO/ agreement in relation to Supplier's Services and/or Goods, itemized expenses (pre-approved in writing) with receipts or other documentation. Incomplete/invalid invoices, and, or, bills shall not be accepted, and any invoice received after 30 days from the date of receiving Services shall not be accepted and the Company shall not have any obligation to release payments towards such an invoice.<span style="xfa-spacerun:yes">  </span></p><p style="margin-right:0pt;margin-left:3.45pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt">21. The Supplier shall comply with all applicable laws, rules, and regulations including labor laws, environmental regulations, and industry-specific compliances. Invoices shall be raised in the format prescribed under the applicable laws of the relevant jurisdiction, including but not limited to the Goods and Services Tax (GST) Act (where applicable), or any other relevant tax legislation. All invoices must contain the necessary details as mandated by applicable law, such as the name, address, and tax registration number (e.g., GSTIN, VAT ID, etc.) of the supplier and the Company, appropriate classification codes (such as HSN/ SAC or equivalent), applicable tax rates, and tax amounts. Invoices that do not comply with these requirements shall be deemed invalid and may be rejected.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt">22. During the term of this PO/ agreement and for a period as required under applicable laws thereafter, Company/select independent third-party auditors will have the right, at its expense, to audit the books and records of Supplier related to Supplier's activities under this PO/agreement.</p><p style="margin-right:0pt;margin-left:3.45pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt">23. If the Supplier fails to comply with applicable tax laws (including timely and accurate filing of returns and deposit of collected taxes), and such failure results in denial of input tax credit or equivalent to the Company, Company shall be entitled to recover or deduct the corresponding amount from payments due to the Supplier. Supplier undertakes that it shall extend its full cooperation and shall ensure that it shall make available to Company any documentation including but not limited to the tax payment proofs, if required to be submitted by Company to the tax authorities under GST laws, such as, at the time of tax audit or assessments.</p><p style="margin-right:0pt;margin-left:3.45pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt">24. The Supplier shall act as an independent contractor and nothing contained in the definitive agreement/ work order / PO shall be construed as creating any principal-agent relationship between Company and the Supplier.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.45pt">25. Any notices or communications under this PO shall be made in writing and delivered to the respective party's registered address or via email as agreed between the parties.<span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.449pt"><span style="xfa-spacerun:yes"> </span></p><p style="margin-right:0pt;margin-left:3.449pt">26. The Parties shall make good faith efforts to resolve any and all disputes arising out of or in connection with this PO in a confidential manner, including by escalating the matter to higher levels of management prior to initiating any legal proceedings. This PO shall be governed by and construed in accordance with the laws of India. Subject to the foregoing, the courts at Mumbai shall have exclusive jurisdiction over any dispute arising out of or in connection with this PO, and no other court shall have jurisdiction.</p><p style="margin-right:0pt;margin-left:3.45pt"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <para hAlign="justify" lineHeight="11pt" marginLeft="1.2pt" marginRight="1.55pt" spaceAbove="0pt" spaceBelow="1pt" textIndent="0.1pt"/>
+            <border>
+               <edge presence="hidden"/>
+               <corner presence="hidden"/>
+            </border>
+         </draw>
+         <border>
+            <edge/>
+            <corner/>
+         </border>
+         <?templateDesigner expand 0?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 36 9 00030029003700470048004C004F0057005B FTdeiltx?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 56 14 00030024002600270028002C002F00310033003500370042005E0060 ACDEILNPRT_{}?>
+      <?renderCache.subset "Arial Narrow" 0 0 ISO-8859-1 4 296 78 0003000500060009000A000B000C000D000F0010001100120013001400150016001700180019001A001B001C001D001E002400250026002700280029002A002B002C002E002F003000310032003300350036003700390042004400450046004700480049004A004B004C004D004E004F0050005100520053005400550056005700580059005A005B005C005D005E006000B300B4 "#&'()*,-./0123456789:;ABCDEFGHIKLMNOPRSTV_abcdefghijklmnopqrstuvwxyz{}“”?>
+      <?renderCache.subset "Arial Narrow" 1 0 ISO-8859-1 4 196 49 000300050009000B000C0011001D002400250026002700280029002A002C002F0030003100320033003400350036003700380042004400450046004700480049004A004B004C004F00500051005200530055005600570058005A005B005C005E0060 "&().:ABCDEFGILMNOPQRSTU_abcdefghilmnoprstuwxy{}?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:0, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 114?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhugdds4ci.sap.upgrad.com:44300/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+      <font posture="normal" psName="Calibri-Bold" typeface="Calibri" weight="bold"/>
+      <font posture="normal" psName="ArialUnicodeMS" typeface="Arial Unicode MS" weight="normal"/>
+      <font posture="normal" psName="ArialRoundedMTBold" typeface="Arial Rounded MT Bold" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZMDA_PO_FORM">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <GRAPHIC/>
+         <GV_LOGO/>
+         <GT_ITEM dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <SR_NO/>
+               <DESC/>
+               <MATNR/>
+               <RATE/>
+               <TAX_CODE/>
+               <QTY/>
+               <UOM/>
+               <AMT/>
+            </DATA>
+         </GT_ITEM>
+         <GS_PO_FORM>
+            <LOGO/>
+            <ORDER_NO/>
+            <ORDER_DATE/>
+            <STATUS/>
+            <COMP_NM/>
+            <COMP_ADDR/>
+            <VEN_NM/>
+            <VEN_ADDR/>
+            <SHIP_NM/>
+            <SHIP_ADDR/>
+            <SUPL_PAN/>
+            <SUPL_GST/>
+            <SHIP_PAN/>
+            <SHIP_GST/>
+            <TOT_AMT/>
+            <CURRENCY/>
+            <AMT_WORDS/>
+            <PAY_TERMS/>
+            <PO_REQ/>
+            <PRO_CODENM/>
+            <PO_STARTDT/>
+            <PO_ENDDT/>
+            <PO_DELDT/>
+            <TERMS_NCOND/>
+            <REMARKS/>
+            <CLIENT_WATER/>
+            <APPR_WATER/>
+            <ASSIGNMENT/>
+            <AUFNR/>
+         </GS_PO_FORM>
+         <GV_TAXTYPE/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (India)" name="en_IN">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">Rs.</currencySymbol>
+         <currencySymbol name="isoname">INR</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c000 79.cca54b0, 2022/11/26-09:29:55        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2025-05-12T07:15:45Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:4980699f-2bb5-4683-aa32-98573b7c9340</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.9.20240701.1.52.2</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
