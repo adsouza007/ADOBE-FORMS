@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xfa="http://www.xfa.org/schema/xfa-template/2.2/" xmlns:xfadata="http://www.xfa.org/schema/xfa-data/1.0/" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <xsd:import namespace="http://www.xfa.org/schema/xfa-data/1.0/"/>
+ <xsd:element name="data">
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element name="GV_QR" type="xsd:base64Binary"/>
+    <xsd:element name="QR_CODE">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Graphic Node GRAPHIC
+URL-FIELD = GV_QR</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Graphic Node GRAPHIC
+URL-FIELD = GV_QR</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:simpleContent>
+       <xsd:extension base="xsd:base64Binary">
+        <xsd:attribute ref="xfadata:contentType" default="image/bmp"/>
+        <xsd:attribute ref="xfadata:transferEncoding" fixed="base64"/>
+       </xsd:extension>
+      </xsd:simpleContent>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GS_IRN_DETAILS">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>IRN details</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>IRN details</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:sequence>
+       <xsd:element name="INV_REG_NUM">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>eDocument India eInvoice: Invoice Registration Number(IRN)</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>eDocument India eInvoice: Invoice Registration Number(IRN)</dc:description>
+          <dc:title>Invoice Reference Number(IRN)</dc:title>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="64"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="ACK_NO">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>eDocument India eInvoice: Acknowledgement Number</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>eDocument India eInvoice: Acknowledgement Number</dc:description>
+          <dc:title>Acknowledgement Number</dc:title>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="ACK_DATE" type="xsd:date">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>eDocument India eInvoice: Acknowledgement Date</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>eDocument India eInvoice: Acknowledgement Date</dc:description>
+          <dc:title>Acknowledgement Date</dc:title>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+      </xsd:sequence>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GV_AMOUNT_WORDS" type="xsd:string"/>
+    <xsd:element name="GV_LOGO" type="xsd:base64Binary"/>
+    <xsd:element name="UPGRAD_LOGO">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Graphic Node GRAPHIC
+URL-FIELD = GV_LOGO</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Graphic Node GRAPHIC
+URL-FIELD = GV_LOGO</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:simpleContent>
+       <xsd:extension base="xsd:base64Binary">
+        <xsd:attribute ref="xfadata:contentType" default="IMAGE/BMP"/>
+        <xsd:attribute ref="xfadata:transferEncoding" fixed="base64"/>
+       </xsd:extension>
+      </xsd:simpleContent>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GV_DECLARATION" type="xsd:string"/>
+    <xsd:element name="GV_TERMS" type="xsd:string"/>
+    <xsd:element name="GV_BANK" type="xsd:string"/>
+    <xsd:element name="GT_TAX2" minOccurs="0" maxOccurs="1">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Table type for IGST Tax table</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Table type for IGST Tax table</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:sequence>
+       <xsd:element name="DATA" minOccurs="1" maxOccurs="unbounded">
+        <xsd:complexType>
+         <xsd:sequence>
+          <xsd:element name="SR_NO">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Serial Number</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Serial Number</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="3"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DESC">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Desciption</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Desciption</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="50"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="SAC_HSN">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Control code for consumption taxes in foreign trade</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Control code for consumption taxes in foreign trade</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="16"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="QTY">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Quantity</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Quantity</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="10"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="UNIT_PR">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Unit Price</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Unit Price</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DICOUNT">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Discount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Discount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="10"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXABLE_AMT">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Taxable Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Taxable Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="GST_RATE">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Gst rate</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Gst rate</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="10"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="IGST">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>IGST Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>IGST Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TOT_AMT">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Total Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Total Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TOT_AMT_INR">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Total Amount (INR)</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Total Amount (INR)</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+         </xsd:sequence>
+        </xsd:complexType>
+       </xsd:element>
+      </xsd:sequence>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GV_FLAG">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Single-Character Flag</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Single-Character Flag</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+       <xsd:maxLength value="1"/>
+      </xsd:restriction>
+     </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="GV_COL1">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Character field, length 32</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Character field, length 32</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+       <xsd:maxLength value="32"/>
+      </xsd:restriction>
+     </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="GV_COL2">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Character field, length 32</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Character field, length 32</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+       <xsd:maxLength value="32"/>
+      </xsd:restriction>
+     </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="GV_COL3">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Character field, length 32</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Character field, length 32</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+       <xsd:maxLength value="32"/>
+      </xsd:restriction>
+     </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="GT_TAX" minOccurs="0" maxOccurs="1">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Table type for Invlice Tax table</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Table type for Invlice Tax table</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:sequence>
+       <xsd:element name="DATA" minOccurs="1" maxOccurs="unbounded">
+        <xsd:complexType>
+         <xsd:sequence>
+          <xsd:element name="SR_NO">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Serial Number</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Serial Number</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="3"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DESC" type="xsd:string">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Desciption</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Desciption</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="SAC_HSN">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Control code for consumption taxes in foreign trade</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Control code for consumption taxes in foreign trade</dc:description>
+             <dc:title>Control Code</dc:title>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="16"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="QTY">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Quantity</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Quantity</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="10"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="UNIT_PR">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Unit Price</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Unit Price</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="DICOUNT">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Discount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Discount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="10"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TAXABLE_AMT">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Taxable Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Taxable Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="GST_RATE" type="xsd:string">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Gst rate</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Gst rate</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="CGST" type="xsd:string">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>CGST Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>CGST Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="SGST">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>SGST Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>SGST Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+          <xsd:element name="TOT_AMT">
+           <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <xsd:documentation>Total Amount</xsd:documentation>
+            <xsd:appinfo>
+             <dc:description>Total Amount</dc:description>
+            </xsd:appinfo>
+           </xsd:annotation>
+           <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+             <xsd:maxLength value="20"/>
+            </xsd:restriction>
+           </xsd:simpleType>
+          </xsd:element>
+         </xsd:sequence>
+        </xsd:complexType>
+       </xsd:element>
+      </xsd:sequence>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GV_SEAL" type="xsd:base64Binary">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Graphic Node</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Graphic Node</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="GRAPHIC">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Graphic Node GRAPHIC
+URL-FIELD = GV_SEAL</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Graphic Node GRAPHIC
+URL-FIELD = GV_SEAL</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:simpleContent>
+       <xsd:extension base="xsd:base64Binary">
+        <xsd:attribute ref="xfadata:contentType" default="IMAGE/BMP"/>
+        <xsd:attribute ref="xfadata:transferEncoding" fixed="base64"/>
+       </xsd:extension>
+      </xsd:simpleContent>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GV_DEV_COMP">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>User field for cluster PC (national)</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>User field for cluster PC (national)</dc:description>
+       <dc:title>Field</dc:title>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+       <xsd:maxLength value="25"/>
+      </xsd:restriction>
+     </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="GS_SUBTOT_ROW">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Sub total row structure</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Sub total row structure</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:sequence>
+       <xsd:element name="CGST_SUB">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Sub CGST amount</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Sub CGST amount</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="SGST_SUB">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Sub IGST amount</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Sub IGST amount</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="IGST_SUB">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Sub CGST amount</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Sub CGST amount</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="TAXABLE_SUB">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Taxable Sub amount</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Taxable Sub amount</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="TOTAMT_SUB">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Total calculated sub amount</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Total calculated sub amount</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="TOTAMT_INR_SUB">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Total calculated sub amount in INR</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Total calculated sub amount in INR</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="TOTAMT_SUB_FOR">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Sub Total of Amount in Foreign Currency</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Sub Total of Amount in Foreign Currency</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="TOTAMT_SUB_INR">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Sub Total of Amount in INR Currency</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Sub Total of Amount in INR Currency</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+      </xsd:sequence>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GV_LOC" type="xsd:base64Binary"/>
+    <xsd:element name="LOC_CERT">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Graphic Node GRAPHIC1
+URL-FIELD = GV_LOC</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Graphic Node GRAPHIC1
+URL-FIELD = GV_LOC</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:simpleContent>
+       <xsd:extension base="xsd:base64Binary">
+        <xsd:attribute ref="xfadata:contentType" default="image/jpeg"/>
+        <xsd:attribute ref="xfadata:transferEncoding" fixed="base64"/>
+       </xsd:extension>
+      </xsd:simpleContent>
+     </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GS_INVOICE_DET">
+     <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <xsd:documentation>Sales invoice dynamic values</xsd:documentation>
+      <xsd:appinfo>
+       <dc:description>Sales invoice dynamic values</dc:description>
+      </xsd:appinfo>
+     </xsd:annotation>
+     <xsd:complexType>
+      <xsd:sequence>
+       <xsd:element name="HOME_PAGE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Home page</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Home page</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="CIN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>CIN NUmber</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>CIN NUmber</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PAN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>PAN number</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>PAN number</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="LOGO">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Logo</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Logo</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="255"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+       <xsd:element name="HEADER_TXT" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Header text</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Header text</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SUP_NAME" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Suplier name</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Suplier name</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SAUP_ADR" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Suplier address</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Suplier address</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PLANT_ADR" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Plant address</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Plant address</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BRANCH" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Branch</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Branch</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="ORDER_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Order No</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Order No</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PAYMENT_TERMS" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Payment Terms</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Payment Terms</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="STATE_CODE_NM" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>State code name</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>State code name</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="INVOICE_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Invoice No</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Invoice No</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="INVOICE_DATE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Invoice Date</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Invoice Date</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PURCH_ORD_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Purchase Order No</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Purchase Order No</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="DUE_DATE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Due Date</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Due Date</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="CURRENCY" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Currency</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Currency</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="EMAIL" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>E-mail</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>E-mail</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PHONE_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Phone No</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Phone No</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="INVOICE_NO_SAP" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Invoice No (Internal)</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Invoice No (Internal)</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PLACE_OF_SUPPLY" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Place of Supply</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Place of Supply</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="GSTIN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>GST Registration number</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>GST Registration number</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_TO_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bill to Number</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bill to Number</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_TO_ADR" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bill to address</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bill to address</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_TO_PHONE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bill to phone</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bill to phone</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_CUST_CODE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bill to custumer code</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bill to custumer code</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_PAN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bill to PAN</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bill to PAN</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_STATE_NM" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Biil to State name</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Biil to State name</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BILL_GSTN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Biil to GSTN</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Biil to GSTN</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_TO_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship To Number</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship To Number</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_TO_ADR" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship to address</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship to address</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_TO_PHONE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship to phone</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship to phone</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_CUST_CODE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship to custumer code</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship to custumer code</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_PAN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship to PAN</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship to PAN</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_STATE_NM" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship to State name</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship to State name</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SHIP_GSTN" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Ship to GSTN</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Ship to GSTN</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="TAX_INV_NO" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Tax Inv No</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Tax Inv No</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="TAX_INV_DT" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Tax Inv Date</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Tax Inv Date</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="HEAD_F_1" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Invoice no/Credit Memo NO</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Invoice no/Credit Memo NO</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="HEAD_F_2" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Invoice date/Credit Memo date</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Invoice date/Credit Memo date</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BEN_NAME" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Beneficiary Name</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Beneficiary Name</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BANK_NAME" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bank Name</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bank Name</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BRANCH_AR" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Branch</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Branch</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BANK_ADDR" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bank Address</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bank Address</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="ACCC_TYPE" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Account Type</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Account Type</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="BANK_ACC" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Bank Account</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Bank Account</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="IFSC_CD" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>IFSC Code</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>IFSC Code</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="SWIFT_CD" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>SWIFT Code</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>SWIFT Code</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="PURC_OR_REF_CM" type="xsd:string">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation> Purchase order no or Ref inv no for credit memo</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description> Purchase order no or Ref inv no for credit memo</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+       </xsd:element>
+       <xsd:element name="CRED_MEMO_FLG">
+        <xsd:annotation xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xsd:documentation>Credit memo flag</xsd:documentation>
+         <xsd:appinfo>
+          <dc:description>Credit memo flag</dc:description>
+         </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+         <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1"/>
+         </xsd:restriction>
+        </xsd:simpleType>
+       </xsd:element>
+      </xsd:sequence>
+     </xsd:complexType>
+    </xsd:element>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+</xsd:schema>
